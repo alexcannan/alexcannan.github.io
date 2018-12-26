@@ -5,6 +5,7 @@ html, body {
 
 body {
   font: normal 10px Verdana, Arial, sans-serif;
+  text-decoration: none;
 }
 
 .nav { 
