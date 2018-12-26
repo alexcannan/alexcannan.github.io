@@ -5,7 +5,7 @@ html, body {
 
 body {
   font: normal 10px Verdana, Arial, sans-serif;
-  text-decoration: none !important
+  background-color: lightblue;
 }
 
 .nav { 
@@ -15,9 +15,10 @@ body {
 }
 
 .nav ul {
+  font-size: 15px;
   height: 60px;
   list-style: none;
-  margin: 10px auto; 
+  margin: 0 auto; 
   padding: 0;
 }
 
