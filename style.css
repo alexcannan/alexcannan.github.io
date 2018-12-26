@@ -4,8 +4,7 @@ html, body {
 }
 
 body {
-  font-family: 'Georgia', sans-serif;
-  font-weight: 100;
+  font: normal 10px Verdana, Arial, sans-serif;
 }
 
 .nav { 
