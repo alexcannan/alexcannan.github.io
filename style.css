@@ -5,7 +5,7 @@ html, body {
 
 body {
   font: normal 10px Verdana, Arial, sans-serif;
-  background-color: lightblue;
+  background-color: #7ea3cc;
 }
 
 .nav { 
@@ -33,7 +33,7 @@ body {
 }
 
 .nav ul li:hover {
-  background: #117bff;
+  background: #ba9e82;
   cursor: pointer; 
   transition: background .5s;  
 }
