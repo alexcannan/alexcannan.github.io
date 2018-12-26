@@ -5,7 +5,10 @@ html, body {
 
 body {
   font: normal 10px Verdana, Arial, sans-serif;
-  text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
 }
 
 .nav { 
