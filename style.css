@@ -33,7 +33,7 @@ body {
 }
 
 .nav ul li:hover {
-  background: #ba9e82;
+  background: #b3001b;
   cursor: pointer; 
   transition: background .5s;  
 }
