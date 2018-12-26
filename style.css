@@ -31,7 +31,7 @@ body {
   transition: background .5s; 
 }
 
-.btn:hover, .nav ul li:hover {
+.nav ul li:hover {
   background: #117bff;
   cursor: pointer; 
   transition: background .5s;  
