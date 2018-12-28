@@ -23,11 +23,24 @@
         float: left;
         padding: 10px;
         height: 300px;
+        overflow: auto;
+        white-space: nowrap;
       }
-      .row:after {
+      .songrow:after {
         content: "";
         display: table;
         clear: both;
+      }
+      .songrow {
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px;
+        margin-right: 20px;
+        outline: 2px solid #a6b7c9;
+      }
+      .songrow:hover{
+        background: #bacbdd;
+        transition: background .5s;
       }
     </style>
   </head>
