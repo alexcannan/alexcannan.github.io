@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <nav>
+  <div class="nav">
+    <div class="container">
     <ul>
-      <li><a href="index.html">Bio</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="music.html">Music</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a style="text-decoration:none; color:white;" href="index.html">Bio</a></li>
+      <li><a style="text-decoration:none; color:white;" href="projects.html">Projects</a></li>
+      <li><a style="text-decoration:none; color:white;" href="music.html">Music</a></li>
+      <li><a style="text-decoration:none; color:white;" href="resume.html">Resume</a></li>
+      <li><a style="text-decoration:none; color:white;" href="contact.html">Contact</a></li>
     </ul>
-  </nav>
+    </div>
+  </div>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Resume | Alex Cannan </title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .column {
+        float: left;
+        padding: 10px;
+        height: 300px;
+      }
+      .left, .right {
+        width: 15%;
+      }
+      .middle {
+        width: 70%;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
   </head>
   <body>
-    This section is for my resume
+    <div class="row">
+      <div class="column left"></div>
+      <div class="column middle">
+        <h2>"<--- UNDER CONSTRUCTION --->"</h1>
+        <h2>Resume</h2>
+        <p>Alex Cannan's current resume is available to download below, in the form of a PDF.</p>
+      </div>
+      <div class="column right"></div>
+    </div
   </body>
 </html>
