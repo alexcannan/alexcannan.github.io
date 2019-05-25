@@ -16,52 +16,40 @@
     <title> Projects | Alex Cannan </title>
     <link rel="stylesheet" href="style.css">
     <style>
-      .project {
-        display: inline-block;
-        vertical-align: top;
+      * {
+        box-sizing: border-box;
+      }
+      .column {
+        float: left;
         padding: 10px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        outline: 2px solid #a6b7c9;
+        height: 300px;
       }
-      .project:hover{
-        background: #bacbdd;
-        transition: background .5s;
+      .left, .right {
+        width: 15%;
       }
-      .row {
-        overflow: auto;
-        white-space: nowrap;
-        width: 100%;
+      .middle {
+        width: 70%;
       }
-      .desc {
-        width: 400px;
-        word-wrap: break-word;
-        word-break: normal;
-        white-space: normal;
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
       }
     </style>
   </head>
   <body>
     <div class="row">
-      <div class="project">
-        <h2>Feedback Identification Algorithm</h2>
-        <a target="_blank" style="text-decoration:none;" href="https://github.com/alexcannan/feedback_identifier">
-          <img src="feedbackid.JPG" alt="CH4 Render" width="400">
-        </a><br>
-        <a style="text-decoration:none; color:blue;" target="_blank" href="https://github.com/alexcannan/feedback_identifier">Github</a>
-        <p class="desc">This project is an attempt to build an algorithm that will numerically determine when feedback is occuring in a live acoustic signal. This is accomplished by taking the FFT periodically, which is then fed into an identification algorithm. The project is currently at an optimization phase, where machine learning concepts are being applied to the algorithm. More concrete results should be available in the near future.</p>
+      <div class="column left"></div>
+      <div class="column middle">
+        <h2>Projects</h2>        
+        <center>
+          <p style="font-style:italic;"><--- UNDER CONSTRUCTION ---></p>
+          <img src="media/construction-dog.jpg" alt="CH4 Render" width="100%">
+          <br>
+          <p style="font-style:italic;"><--- UNDER CONSTRUCTION ---></p>
+        </center>
       </div>
-      <div class="project">
-        <h2>Mandlebrot Set Visualization</h2>
-        <a target="_blank" style="text-decoration:none;" href="https://github.com/alexcannan/mandlebrot_visualizer">
-          <img src="mandlebrot.jpg" width="400">
-        </a><br>
-        <a style="text-decoration:none; color:blue;" target="_blank" href="https://github.com/alexcannan/mandlebrot_visualizer">Github</a>
-        <p class="desc">This project will be an exercise in OpenGL and numerical analysis. The project is in the research phase right now, with coding scheduled for the end of January.</p>
-      </div>
-      <div class="project">
-        <h2>More coming...</h2>
-      </div>
-    </div
+      <div class="column right"></div>
+    </div>
   </body>
 </html>
