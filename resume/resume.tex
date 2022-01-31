@@ -1,0 +1,155 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2022 Alex F. Cannan <alexfcannan@gmail.com> https://github.com/alexcannan
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+\usepackage{shading}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+ & \textbf{\Large Alex Cannan} & \\
+Greater New York Area & (203) 993-4503 & alexfcannan@gmail.com \\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{Brown University, Providence, RI}{GPA: 3.5}{Sc.M. Engineering (Signal Processing)}{Graduated May 2020}
+	\begin{itemize}
+		\resitem{Relevant courses: Pattern Recognition/Machine Learning, Graph Theory, Digital Signal Processing, Audio and Speech Processing, Mathematical Statistics, Scientific Programming in C++}
+	\end{itemize}
+
+\item
+	\ressubheading{University of Connecticut, Storrs, CT}{GPA: 3.4}{B.S. Engineering Physics (Electrical and Computer Engineering Focus)}{Graduated May 2018}
+	\begin{itemize}
+		\resitem{Relevant courses: Applied Linear Algebra, Multivariable Calculus, Differential Equations, Partial Differential Equations, Mechanics, Electricity and Magnetism, Statistical \& Thermal Physics, Quantum Mechanics, Signals \& Systems, Systems Analysis, Optical Engineering, Communication Systems, Semiconductor Devices \& Nanostructures}
+	\end{itemize}
+
+\end{itemize}
+
+\resheading{Skills}
+\begin{description}
+    \item[Languages:]
+    Python, C++, Go, Bash, JavaScript, HTML/CSS
+    \item[Databases:]
+    MongoDB, BigQuery, SQLite, ElasticSearch, Weaviate 
+    \item[Versioning/Deployment:]
+    Git, Github Actions, Docker, Kubernetes, Argo CD
+    \item[Web:]
+    FastAPI (Python), Swagger/OpenAPI, WebSockets, WebAssembly
+    \item[Metrics:]
+    Prometheus, Grafana, LogDNA
+    \item[Clouds:]
+    AWS, GCP, Azure, Oracle, Digital Ocean 
+\end{description}
+
+\resheading{Work Experience}
+\begin{itemize}
+\item
+	\ressubheading{Zencastr}{Remote}{Machine Learning Engineer}{Oct 2019 - Present}
+	\begin{itemize}
+		\resitem{Developed and deployed Zencastr's transcription pipeline, automatically transcribing podcast audio after recording completion}
+        \resitem{}
+        \resitem{Big data visualization of interconnected graphs using NetworkX and Cytoscape}
+        \resitem{Responsible for uptime and accuracy of various internal business intelligence tools}
+	\end{itemize}
+
+\item 
+	\ressubheading{Your Heaven Audio}{Providence, RI}{Product Engineering Intern}{July 2018 - Oct 2019}
+	\begin{itemize}
+        \resitem{Conceived, prototyped, and implemented a feedback elimination algorithm for use in embedded systems}
+        \resitem{Applied optimizations to legacy firmware C++ code for use in a PIC32 Microcontroller}
+	\end{itemize}
+
+\item
+    \ressubheading{Harman International Industries}{Shelton, CT}{Test Engineering Intern}{Summer 2017 \& 2018}
+    \begin{itemize}
+        \resitem{Developed scripted test procedures to detect faults in microprocessor-controlled amplifiers}
+        \resitem{Worked with team to develop scripted and written procedures for factory-level testing}
+        \resitem{Victor of Harman's intern competitions--worked with other interns to develop
+        marketing/business strategies for various projects}
+    \end{itemize}
+
+\item
+	\ressubheading{UConn Quantitative Learning Center}{Storrs, CT}{Physics/Math/Statistics Tutor}{April 2016 - May 2018}
+	\begin{itemize}
+		\resitem{Provide tutoring in calculus based physics/math/stats courses, tutoring up to 10 students at once}
+		\resitem{Able to convey abstract concept to many different kinds of students}
+	\end{itemize}
+\end{itemize}
+
+
+\resheading{Activities}
+\begin{itemize}
+\item
+    \ressubheading{Progressive Coders Network}{November 2021 - Present}{Volunteer Developer}{}
+    \begin{itemize}
+        \resitem{Member of ProgCode, a non-profit organization building open-source tools to reduce the influence of money in politics}
+    \end{itemize}
+\item 
+    \ressubheading{UConn Audio/Visual Club}{April 2016 - May 2018}{Founder and President}{}
+    \begin{itemize}
+        \resitem{Founder and President of the UConn AV Club, a funded organization on campus, which provides a dynamic environment for peers to collaborate on their audio and visual projects together}
+    \end{itemize}
+\item 
+    \ressubheading{Cloudwatch Records}{June 2012 - Present}{Sole Proprietor}{}
+    \begin{itemize}
+        \resitem{Manager: Album packaging, distribution, and light marketing for various artists}
+        \resitem{Producer: Experience with high-fidelity audio recording and mixing via Pro Tools and Reaper}
+    \end{itemize}
+\end{itemize}
+
+
+\resheading{Interests}
+
+\begin{description}
+\item[Academic:] Speech Processing, Graph Understanding
+\item[Sports:] Rowing, Rock Climbing
+\item[Arts:] Music, Drawing, Curling
+\item[Membership:] IEEE, ISCA (isca-speech.org)
+\end{description}
+
+\end{document}
