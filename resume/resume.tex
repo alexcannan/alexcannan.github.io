@@ -26,19 +26,22 @@
 %-----------------------------------------------------------
 %\usepackage{fullpage}
 \usepackage{color}
+\usepackage{hyperref}
+\usepackage{enumitem}
 \definecolor{mygrey}{gray}{0.80}
 %\textheight=9.0in
 \pagestyle{empty}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\setlist[itemize]{leftmargin=*}
 
 %-----------------------------------------------------------
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
 \newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
 \newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+\begin{tabular*}{6.9in}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
 		\textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
@@ -49,59 +52,31 @@
 
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
  & \textbf{\Large Alex Cannan} & \\
-Greater New York Area & (203) 993-4503 & alexfcannan@gmail.com \\
+Greater New York City Area & (203) 993-4503 & \href{mailto:alexfcannan@gmail.com}{alexfcannan@gmail.com} \\
 \end{tabular*}
 \\
 
 \vspace{0.1in}
 
-\resheading{Education}
-\begin{itemize}
-\item
-	\ressubheading{Brown University, Providence, RI}{GPA: 3.5}{Sc.M. Engineering (Signal Processing)}{Graduated May 2020}
-	\begin{itemize}
-		\resitem{Relevant courses: Pattern Recognition/Machine Learning, Graph Theory, Digital Signal Processing, Audio and Speech Processing, Mathematical Statistics, Scientific Programming in C++}
-	\end{itemize}
-
-\item
-	\ressubheading{University of Connecticut, Storrs, CT}{GPA: 3.4}{B.S. Engineering Physics (Electrical and Computer Engineering Focus)}{Graduated May 2018}
-	\begin{itemize}
-		\resitem{Relevant courses: Applied Linear Algebra, Multivariable Calculus, Differential Equations, Partial Differential Equations, Mechanics, Electricity and Magnetism, Statistical \& Thermal Physics, Quantum Mechanics, Signals \& Systems, Systems Analysis, Optical Engineering, Communication Systems, Semiconductor Devices \& Nanostructures}
-	\end{itemize}
-
-\end{itemize}
-
-\resheading{Skills}
-\begin{description}
-    \item[Languages:]
-    Python, C++, Go, Bash, JavaScript, HTML/CSS
-    \item[Machine Learning:]
-    PyTorch, Tensorflow, Kaldi, ESPNet, scikit-learn
-    \item[Databases:]
-    MongoDB, BigQuery, SQLite, ElasticSearch, Weaviate, Lucene
-    \item[Versioning/Deployment:]
-    Git, Github Actions, Docker, Kubernetes, Argo CD
-    \item[Web:]
-    FastAPI (Python), Swagger/OpenAPI, WebSockets, WebAssembly
-    \item[Metrics:]
-    Prometheus, Grafana, LogDNA
-    \item[Clouds:]
-    AWS, GCP, Azure, Oracle, Digital Ocean 
-\end{description}
 
 \resheading{Work Experience}
-\begin{itemize}
+\begin{description}
 \item
-    \ressubheading{Zencastr}{Remote}{Senior Machine Learning Engineer}{Oct 2019 - Present}
+    % not using \resitem here because 2 roles
+    \begin{tabular*}{6.9in}{l@{\extracolsep{\fill}}r}
+        \textbf{Zencastr} & Remote \\
+        \textit{Senior Machine Learning Engineer} & \textit{Feb 2022 - Present} \\
+        \textit{Machine Learning Engineer} & \textit{Oct 2019 - Feb 2022} \\
+    \end{tabular*}\vspace{-6pt}
 	\begin{itemize}
-        \resitem{*Senior as of Febuary 2022*}
-		\resitem{Developed and deployed Zencastr's transcription pipeline, automatically transcribing podcast audio on recording completion}
-        \resitem{Design and implementation of robust ML pipelines for data understanding}
-        \resitem{Big data visualization of graph data using NetworkX}
-        \resitem{Responsible for uptime and accuracy of various internal business intelligence tools}
+		\resitem{Developed and deployed Zencastr's transcription pipeline to automatically transcribe audio from thousands of podcasts daily, optimizing for accuracy, latency, and scalability}
+        \resitem{Design and implementation of robust ML microservice workers for scalable data indexing and understanding}
+        \resitem{Exposure of ML models as RESTful APIs for use in other applications across several teams}
+        \resitem{Work closely with the product team to iterate on features and improve user experience}
+
 	\end{itemize}
 
-\item 
+\item
 	\ressubheading{Your Heaven Audio}{Providence, RI}{Product Engineering Intern}{July 2018 - Oct 2019}
 	\begin{itemize}
         \resitem{Conceived, prototyped, and implemented a feedback elimination algorithm for use in embedded systems}
@@ -123,37 +98,73 @@ Greater New York Area & (203) 993-4503 & alexfcannan@gmail.com \\
 		\resitem{Provide tutoring in calculus based physics/math/stats courses, tutoring up to 10 students at once}
 		\resitem{Able to convey abstract concept to many different kinds of students}
 	\end{itemize}
-\end{itemize}
+\end{description}
+
+
+\resheading{Education}
+\begin{description}
+\item
+	\ressubheading{Brown University, Providence, RI}{GPA: 3.5}{Sc.M. Engineering (Signal Processing)}{Graduated May 2020}
+	\begin{itemize}
+		\resitem{Relevant courses: Pattern Recognition/Machine Learning, Graph Theory, Digital Signal Processing, Audio and Speech Processing, Mathematical Statistics, Scientific Programming in C++}
+	\end{itemize}
+
+\item
+	\ressubheading{University of Connecticut, Storrs, CT}{GPA: 3.4}{B.S. Engineering Physics (Electrical and Computer Engineering Focus)}{Graduated May 2018}
+	\begin{itemize}
+		\resitem{Relevant courses: Applied Linear Algebra, Multivariable Calculus, Differential Equations, Partial Differential Equations, Mechanics, Electricity and Magnetism, Statistical \& Thermal Physics, Quantum Mechanics, Signals \& Systems, Systems Analysis, Optical Engineering, Communication Systems, Semiconductor Devices \& Nanostructures}
+	\end{itemize}
+
+\end{description}
+
+\resheading{Skills}
+\begin{description}
+    \item[Languages:]
+    Python, C++, Go, Bash, JavaScript, HTML/CSS
+    \item[Machine Learning:]
+    PyTorch, Tensorflow, Kaldi, scikit-learn
+    \item[Databases:]
+    MongoDB, BigQuery, SQLite, ElasticSearch, Weaviate, Lucene
+    \item[Versioning/Deployment:]
+    Git, Github Actions, Docker, Kubernetes, Argo CD
+    \item[Web:]
+    FastAPI (Python), Swagger/OpenAPI, WebSockets, WebAssembly
+    \item[Metrics:]
+    Prometheus, Grafana, LogDNA
+    \item[Clouds:]
+    AWS, GCP, Azure, Oracle, Digital Ocean
+\end{description}
 
 
 \resheading{Activities}
-\begin{itemize}
+\begin{description}
 \item
     \ressubheading{Progressive Coders Network}{November 2021 - Present}{Volunteer Developer}{}
     \begin{itemize}
-        \resitem{Member of ProgCode, a non-profit organization building open-source tools to reduce the influence of money in politics}
+        \resitem{Member of ProgCode, a non-profit organization building open-source tools for jflsjfls}
     \end{itemize}
-\item 
+\item
     \ressubheading{UConn Audio/Visual Club}{April 2016 - May 2018}{Founder and President}{}
     \begin{itemize}
         \resitem{Founder and President of the UConn AV Club, a funded organization on campus, which provides a dynamic environment for peers to collaborate on their audio and visual projects together}
     \end{itemize}
-\item 
+\item
     \ressubheading{Cloudwatch Records}{June 2012 - Present}{Sole Proprietor}{}
     \begin{itemize}
         \resitem{Manager: Album packaging, distribution, and light marketing for various acts}
         \resitem{Producer: Experience with high-fidelity audio recording and mixing via Pro Tools and Reaper}
     \end{itemize}
-\end{itemize}
+\item
+    Member of IEEE and ISCA
+\end{description}
 
 
 \resheading{Interests}
 
 \begin{description}
 \item[Academic:] Speech Processing, Graph Understanding
-\item[Sports:] Rowing, Rock Climbing
+\item[Sports:] Soccer, Rowing, Rock Climbing
 \item[Arts:] Music, Drawing
-\item[Membership:] IEEE, ISCA
 \end{description}
 
 \end{document}
