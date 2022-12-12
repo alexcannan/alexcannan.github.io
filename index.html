@@ -36,14 +36,21 @@
         clear: both;
       }
     </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const counter = document.getElementById('counter');
+        var visitors = Math.random() > 0.9 ? Math.floor(Math.random() * 1000000) : Math.floor(Math.log(Math.random() * 1000000));
+        counter.innerHTML = visitors.toLocaleString();
+      });
+    </script>
   </head>
   <body>
     <div class="row">
       <div class="column left"></div>
       <div class="column middle">
         <h2>Bio</h2>
-        <p>Alex Cannan is currently a graduate student at Brown University, pursuing his master's degree in Electrical and 
-           Computer Engineering. His interests include signal processing and neural networks. He has previously received his B.S. in 
+        <p>Alex Cannan is currently a graduate student at Brown University, pursuing his master's degree in Electrical and
+           Computer Engineering. His interests include signal processing and neural networks. He has previously received his B.S. in
            Engineering Physics from the University of Connecticut.</p>
         <p style="font-style:italic;">This website is currently under construction!</p>
         <br>
@@ -61,13 +68,12 @@
         <br>
         <br>
         <center>
-          
+
           <img src="media/homers-web-page.gif" alt="CH4 Render" width="400">
           <br>
           <br>
           Total number of visitors:<br>
-          <!-- Badge Code - Do Not Change The Code --><div class="col-xs-12 mt20" id="bg"><div style="margin:0px auto;width:133px;background:#443c94;text-align:left;display:flex;border-radius:5px"><span style="padding:7px;display:inline-block;border-right:1px solid #746dba"><a href="http://visitorshitcounter.com" rel="nofollow noopener"  target="_blank" title="https://visitorshitcounter.com/"><img src="https://visitorshitcounter.com/img/s-logo.svg" alt="https://visitorshitcounter.com/" style="width:100%;border:none;float:left"></a></span><span class="text" id="dupli_hit_counter"   style="padding:10px 0 0 0;display:inline-block;color:#ffffff;width:100%;text-align:center;"></span></span><input type="hidden" id="site_val"   value="https://visitorshitcounter.com/counterDisplay?code=4bd8ec5d95796dac70749fa33a84dadd&style=0017&pad=5&type=page&initCount=1"></div></div><script src="https://visitorshitcounter.com/js/badgess.js?v=1588283694"></script><!-- Badge Code End Here -->
-          <br>
+          <span id="counter"></span>
           <br>
           Updated November 2019
         </center>
